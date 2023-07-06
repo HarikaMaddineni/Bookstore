@@ -52,7 +52,7 @@ public class BaseClass {
 	@AfterClass(groups= {"sanity","master","regression"})
 	public void tearDown() {
 		logger.info("***************Opencart Application closed*************");
-		//driver.quit();
+		driver.quit();
 			}
 	
 	public String generateRandomString() {
